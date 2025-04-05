@@ -48,14 +48,4 @@ This website is fully responsive and optimized for desktops, tablets, and mobile
 
 ---
 
-## 📸 Screenshots
 
-> *(Optional)* Add screenshots of your website here to showcase layout/design on various devices.
-
----
-
-## 📌 Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/your-portfolio-repo.git
