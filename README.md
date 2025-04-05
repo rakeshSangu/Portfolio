@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository! This is a fully responsive website 
 
 ## 🚀 Live Demo
 
-[Click here to view my live portfolio](https://your-portfolio-url.com)
+[Click here to view my live portfolio]rakeshsangu.ccbp.tech)
 
 ---
 
