@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+    <title>Rakesh | Fullstack Developer</title>
+    <script href="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background-section">
+        <div class="fixed-top">
+            <nav class="mobile-nav">
+                <a href="#sectionHome" class="logo-name"><span class="">R</span>akesh</a>
+                <button id="mobile-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#a843bf" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+            </nav>
+            <ul id="mobile-menu-list" class="mobile-nav-list-container d-none">
+                <li>
+                    <a href="#sectionHome">Home</a>
+                </li>
+                <li>
+                    <a href="#sectionAboutMe">About Me</a>
+                </li>
+                <li>
+                    <a href="#sectionProjects">Projects</a>
+                </li>
+                <li>
+                    <a href="#sectionContactMe">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="large-nav fixed-top">
+            <a href="#sectionHome" class="logo-name">Rakesh</a>
+            <div class="large-nav-list-container">
+                <a href="#sectionHome">Home</a>
+                <a href="#sectionAboutMe">About Me</a>
+                <a href="#sectionProjects">Projects</a>
+                <a href="#sectionContactMe">Contact Me</a>
+            </div>
+        </nav>
+        <div class="home" id="sectionHome">
+            <img class="home-image order-md-2" src="https://cdn3d.iconscout.com/3d/premium/thumb/application-developer-working-on-project-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--software-development-engineer-programming-programmer-pack-professionals-illustrations-3821449.png?f=webp" />
+            <div class="w-100">
+                <p class="home-para"> Hi, I'm <span class="home-name">Rakesh Sangu</span> <br />
+                    and I am a Passionate <br />
+                    <span class="home-name" id="element"></span>
+                </p>
+                <div class="d-flex justify-content-center flex-wrap">
+                    <a href="https://drive.google.com/file/d/1xuZtzIlVlf8ihClZf6OLqnlHixyNnSge/view" target="_blank">
+                        <button class="btn btn-outline-light home-button">Resume</button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rakeshsangu/" target="_blank">
+                        <button class="btn btn-outline-light home-button">LinkedIn</button>
+                    </a>
+                    <a href="https://github.com/rakeshSangu" target="_blank">
+                        <button class="btn btn-outline-light home-button">GitHub</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="about-me" id="sectionAboutMe">
+            <p class="about-me-heading  m-3">About Me👨‍💻 </p>
+            <img class="about-image" src="https://res.cloudinary.com/dx6rnpfqd/image/upload/v1742190981/3d-rendering-cartoon-like-man-working-computer_qfaanp.jpg" />
+            <p class="text-start intro-para">
+                I am a <b>MERN Stack Developer</b> with a passion for problem-solving and <b>AI/ML</b>. My journey began with Mechanical Engineering at JNTUH, but my enthusiasm for technology and development led me to become proficient in full-stack web development.
+                Passionate about building scalable and user-friendly web applications. I focus on writing clean, maintainable code while continuously learning new technologies.
+            </p>
+            <p class="text-start education-para">Education🎓</p>
+            <ul class="text-start">
+                <li><b>B.Tech</b>, Mechanical Engineering - JNTUH (<b>8.33 CGPA</b>) - [2021-2025]</li>
+                <li><b>B.Tech, AI/ML(Minor)</b> - JNTUH - [2023-2025]</li>
+                <li><b>Industry Ready Certification in Full-Stack Development</b> - Nxtwave</li>
+                <li><b>Intermediate</b>, MPC - SR Jr. College (<b>95.7%</b>) - [2018 - 2020]</li>
+                <li><b>SSC</b>, MPC - Krishnaveni Talent School (<b>9.8 CGPA</b>) - [2017 - 2018]</li>
+            </ul>
+            <p class="text-start education-para">Current Focus💡</p>
+            <ul class="text-start">
+                <li>Mastering Full-Stack Development with MERN Stack</li>
+                <li>Exploring AI/ML Applications in real-world projects</li>
+                <li>Enhancing Problem-Solving Skills with DSA</li>
+            </ul>
+        </section>
+        <p class="skill-heading">Skills🛠 </p>
+        <section id="sectionSkills" class="skills-section">
+            <div class="skill-container">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/html.png" />
+                <p>HTML</p>
+            </div>
+            <div class="skill-container">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/css.png" />
+                <p>CSS</p>
+            </div>
+            <div class="skill-container">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/javascript.png" />
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-container">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/react-js.png" />
+                <p>React</p>
+            </div>
+            <div class="skill-container">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/node-js.png" />
+                <p>NodeJS</p>
+            </div>
+            <div class="skill-container">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/python.png" />
+                <p>Python</p>
+            </div>
+            <div class="skill-container">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/portfolio/sqltech.png" />
+                <p>SQLite</p>
+            </div>
+        </section>
+        <section id="sectionProjects" class="project-section pb-2">
+            <p class="about-me-heading  m-3">Projects</p>
+            <ul class="projects-list p-4 pb-0 pt-0">
+                <li>
+                    <div class="card w-100 h-100 mb-4" style="width: 18rem; border: 1px solid black">
+                        <img class="card-img-top" src="https://res.cloudinary.com/dx6rnpfqd/image/upload/v1742214304/Screenshot_2025-03-17_175335_fiuxzk.png" alt="NxtWatch">
+                        <div class="card-body project-body">
+                            <h5 class="card-title project-title" style="color: violet">NxtWatch</h5>
+                            <p class="card-text">
+                                Nxtwatch is a YouTube clone built using React, featuring secure JWT authentication, dynamic REST API integration, and light/dark theme switching. It includes routes for Home, Trending, Gaming, and Saved Videos, with a detailed Video Details page allowing users to interact with videos via like, dislike, and save options.
+                            </p>
+                            <ul class="projest-skills-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                            <a target="_blank" href="https://rakesh3nxtwatch.ccbp.tech/" class="btn btn-primary view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card w-100 h-100 mb-4" style="width: 18rem; border: 1px solid black">
+                        <img class="card-img-top" src="https://res.cloudinary.com/dx6rnpfqd/image/upload/v1742215659/Screenshot_2025-03-17_181708_clqzet.png" alt="Nxtmart">
+                        <div class="card-body project-body">
+                            <h5 class="card-title project-title" style="color: violet">NxtMart - A Grocery Delivery App</h5>
+                            <p class="card-text">
+                                NxtMart is a React-based grocery delivery application designed to provide a fast and efficient shopping experience, similar to Blinkit and Zepto. The app allows users to quickly browse and purchase groceries, with seamless product management and checkout functionality.
+                            </p>
+                            <ul class="projest-skills-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                            <a target="_blank" href="https://rakeshnextwavee.ccbp.tech/" class="btn btn-primary view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card w-100 h-100 mb-4" style="width: 18rem; border: 1px solid black">
+                        <img class="card-img-top" src="https://res.cloudinary.com/dx6rnpfqd/image/upload/v1742215999/Screenshot_2025-03-17_182251_hfhv9b.png" alt="NxtTrendz">
+                        <div class="card-body project-body">
+                            <h5 class="card-title project-title" style="color: violet">NxtTrendz - (ECommerce Clone - Amazon, Flipkart)</h5>
+                            <p class="card-text">
+                                NxtTrendz is a comprehensive e-commerce platform inspired by leading online retailers like Amazon and Flipkart. Built with React.js, it offers users a seamless shopping experience with features such as user authentication, product browsing, advanced search, filtering, sorting, and a dynamic shopping cart.
+                            </p>
+                            <ul class="projest-skills-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                            <a target="_blank" href="https://rakesh3trendz.ccbp.tech/" class="btn btn-primary view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card w-100 h-100 mb-4" style="width: 18rem; border: 1px solid black">
+                        <img class="card-img-top" src="https://res.cloudinary.com/dx6rnpfqd/image/upload/v1742216496/Screenshot_2025-03-17_183108_lvynha.png" alt="JobbyApp">
+                        <div class="card-body project-body">
+                            <h5 class="card-title project-title" style="color: violet">Jobby App</h5>
+                            <p class="card-text">
+                                A modern job portal where users can log in, search, and apply for jobs.
+                            </p>
+                            <ul class="projest-skills-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>API</li>
+                            </ul>
+                            <a target="_blank" href="https://rakesh18jobby.ccbp.tech/" class="btn btn-primary view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card w-100 h-100 mb-4" style="width: 18rem; border: 1px solid black">
+                        <img class="card-img-top" src="https://res.cloudinary.com/dx6rnpfqd/image/upload/v1742216716/Screenshot_2025-03-17_183449_wdkhrp.png" alt="task-tracker">
+                        <div class="card-body project-body">
+                            <h5 class="card-title project-title" style="color: violet">Task Tracker</h5>
+                            <p class="card-text">
+                                A modern Task-Tracker, where users can Add, Delete, Mark as completed and Save Tasks.
+                            </p>
+                            <ul class="projest-skills-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a target="_blank" href="https://rakeshtodo18.ccbp.tech" class="btn btn-primary view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card w-100 h-100 mb-4" style="width: 18rem; border: 1px solid black">
+                        <img class="card-img-top" src="https://res.cloudinary.com/dx6rnpfqd/image/upload/v1742221076/Screenshot_2025-03-17_194727_zx4qxx.png" alt="IPL-Dashboard">
+                        <div class="card-body project-body">
+                            <h5 class="card-title project-title" style="color: violet">IPL Dashboard</h5>
+                            <p class="card-text">
+                                Built an interactive hub for IPL teams and matches information. Navigated seamlessly with React Router, presenting team details and matches with REST API calls. Included a custom 404 page for non-existent routes.
+                            </p>
+                            <ul class="projest-skills-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                            <a target="_blank" href="https://rakesh18ipl.ccbp.tech/" class="btn btn-primary view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="sectionContactMe" class="contact-me-section">
+            <p class="skill-heading">Contact Me</p>
+            <div class="d-flex">
+                <form action="https://api.web3forms.com/submit" method="POST" class="w-100 w-md-60">
+                    <input type="hidden" name="access_key" value="5f9c0bd5-1068-4a5b-95c7-014bf3266377">
+                    <div class="input-container">
+                        <label for="name">Name</label>
+                        <input name="name" required id="name" type="text" placeholder="Enter Your Name" />
+                    </div>
+                    <div class="input-container">
+                        <label for="mail">Email</label>
+                        <input name="email" required id="mail" type="email" placeholder="Enter Your Email" />
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Message</label>
+                        <textarea name="message" required placeholder="Enter your message here..." rows="4"></textarea>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <img class="d-none d-md-block contact-me-image" alt="contact-me" src="https://cdn3d.iconscout.com/3d/premium/thumb/contact-us-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--phone-telephone-communication-copywriting-pack-marketing-branding-illustrations-4568171.png?f=webp" />
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <!-- About Section -->
+                <div class="footer-about">
+                    <h3 style="color: #a926eb">About Me</h3>
+                    <p>I am a passionate MERN stack developer with a focus on building scalable and efficient web applications.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 style="color: #a926eb">Quick Links</h3>
+                    <ul>
+                        <li><a href="#sectionAboutMe">About</a></li>
+                        <li><a href="#sectionProjects">Projects</a></li>
+                        <li><a href="#sectionContactMe">Contact</a></li>
+                        <li><a href="#sectionSkills">Skills</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3 style="color: #a926eb">Contact</h3>
+                    <p>Email: <a target="_blank" href="mailto: rakeshsangu3@gmail.com">rakeshsangu3@gmail.com</a></p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="footer-social d-flex flex-column">
+                    <h3 style="color: #a926eb">Follow Me</h3>
+                    <a href="https://github.com/rakeshSangu" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/rakeshSangu" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rakesh. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Frontend Developer', 'Backend Developer', "Fullstack Developer", "AI/ML Enthusiast", "MERN Stack Developer."],
+                typeSpeed: 80,
+            });
+        </script>
+</body>
+
+</html>
